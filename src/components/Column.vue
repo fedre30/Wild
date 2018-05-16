@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="column"></div>
-    <div :class="{'active' : highlighted}">{{ keyboard }}</div>
-
+    <div class="column">
+      <slot></slot>
+    </div>
+    <div :class="{'active' : highlighted}">{{ keyboard.toUpperCase() }}</div>
   </div>
 </template>
 
@@ -32,6 +33,7 @@ export default {
   height: 70vh
   border: 1px solid grey
   margin: 0 20px
+  position: relative
 .active
   color: white
   background-color: red
