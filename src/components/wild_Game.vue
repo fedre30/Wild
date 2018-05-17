@@ -3,7 +3,7 @@
     <h1>Guitar Hero - {{ currentSongTimeInSec }}</h1>
     <div class="container">
       <Column :keyboard="column.keyboard" :highlighted="column.highlighted" v-for="column in columns" :key="column.keyboard">
-        <div class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></div>
+        <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
       </Column>
     </div>
   </div>
@@ -11,14 +11,21 @@
 
 <script>
 
-import Column from './Column.vue'
+// COMPONENTS
+import Column from './wild_Column.vue'
+import Note from './wild_note.vue'
+
+// ASSETS
 import song1 from '../assets/song1'
+
+// LIBRARIES
 import _ from 'lodash'
 
+// INITIALIZATION
 const lookAheadTime = 4
 const lookBackTime = 0.5
 
-function prepareSong(song){
+function prepareSong (song) {
   const songCopy = _.cloneDeep(song)
   songCopy.notes = songCopy.notes.map((note, index) => {
     note.id = index
@@ -28,7 +35,7 @@ function prepareSong(song){
 }
 
 export default {
-  components: {Column},
+  components: {Column, Note},
   name: 'Game',
   data() {
     return {
@@ -54,8 +61,8 @@ export default {
     }
   },
   created: function () {
-    window.addEventListener('keyup', this.keyup)
     window.addEventListener('keydown', this.keydown)
+    window.addEventListener('keyup', this.keyup)
   },
 
   computed: {
@@ -85,7 +92,7 @@ export default {
       this.columns[index].highlighted = true
     },
 
-    animate(){
+    animate () {
       const currentTime = new Date().getTime() / 1000
       const deltaTime = this.previousTime !== null ? currentTime - this.previousTime : 0
       this.currentSongTime += deltaTime
@@ -113,8 +120,8 @@ export default {
     this.startGame()
   },
   beforeDestroy: function () {
-    window.removeEventListener('keyup', this.keyup, this.keyup)
-    window.removeEventListener('keydown', this.keyup, this.keydown)
+    window.removeEventListener('keydown', this.keydown)
+    window.removeEventListener('keyup', this.keyup)
   }
 }
 </script>
@@ -124,15 +131,5 @@ export default {
 .container
   display: flex
   justify-content: center
-.note
-  width: 30px
-  height: 30px
-  border-radius: 100px
-  background-color: black
-  position: absolute
-  bottom: var(--y)
-
-
-
 
 </style>

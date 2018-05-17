@@ -35,9 +35,7 @@ export default {
   margin: 0 20px
   position: relative
 .active
-  color: white
-  background-color: red
-  width: 2rem
-  height: 2rem
+  color: red
+  font-size: 2rem
 
 </style>
