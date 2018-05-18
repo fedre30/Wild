@@ -1,6 +1,7 @@
 <template>
   <div class="game">
     <h1>Guitar Hero - {{ currentSongTimeInSec }}</h1>
+    <Score :score="0"></Score>
     <div class="container">
       <Column :keyboard="column.keyboard" :highlighted="column.highlighted" v-for="column in columns" :key="column.keyboard">
         <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
@@ -14,6 +15,7 @@
 // COMPONENTS
 import Column from './wild_Column.vue'
 import Note from './wild_note.vue'
+import Score from './wild_score.vue'
 
 // ASSETS
 import song1 from '../assets/song1'
@@ -35,7 +37,7 @@ function prepareSong (song) {
 }
 
 export default {
-  components: {Column, Note},
+  components: {Column, Note, Score},
   name: 'Game',
   data() {
     return {
@@ -77,18 +79,23 @@ export default {
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
       })
+      console.log(`keyup index: ${index}`);
       if (index <= -1) {
         return
       }
+      console.log(`keyup column: ${this.columns[index]}`);
       this.columns[index].highlighted = false
     },
     keydown: function (e) {
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
       })
+      console.log(`keydown index: ${index}`);
       if (index <= -1) {
         return
       }
+
+      console.log(`keydown column: ${this.columns[index]}`);
       this.columns[index].highlighted = true
     },
 
