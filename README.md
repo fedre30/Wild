@@ -26,4 +26,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   * Column : falling note zone (one note for each column)
   
      * Note: note to be played by user (inside Column component)
+  * Playzone : zone where notes have to be played
   * Score : points incremented when user play notes syncronously
