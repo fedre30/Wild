@@ -3,7 +3,7 @@
     <div class="column">
       <slot></slot>
     </div>
-    <div :class="{'active' : highlighted}">{{ keyboard.toUpperCase() }}</div>
+    <div :class="{'right' : highlighted}">{{ keyboard.toUpperCase() }}</div>
   </div>
 </template>
 
@@ -34,8 +34,11 @@ export default {
   border: 1px solid grey
   margin: 0 20px
   position: relative
-.active
+.wrong
   color: red
+  font-size: 2rem
+.right
+  color: green
   font-size: 2rem
 
 </style>

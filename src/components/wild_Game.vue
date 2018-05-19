@@ -1,11 +1,12 @@
 <template>
   <div class="game">
-    <h1>Guitar Hero - {{ currentSongTimeInSec }}</h1>
-    <Score :score="0"></Score>
+    <h1>Guitar Hero</h1>
+    <Score :score="score"></Score>
     <div class="container">
       <Column :keyboard="column.keyboard" :highlighted="column.highlighted" v-for="column in columns" :key="column.keyboard">
         <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
       </Column>
+      <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
     </div>
   </div>
 </template>
@@ -16,6 +17,7 @@
 import Column from './wild_Column.vue'
 import Note from './wild_note.vue'
 import Score from './wild_score.vue'
+import PlayZone from './wild_playZone.vue'
 
 // ASSETS
 import song1 from '../assets/song1'
@@ -38,7 +40,7 @@ function prepareSong (song) {
 }
 
 export default {
-  components: {Column, Note, Score},
+  components: {Column, Note, Score, PlayZone},
   name: 'Game',
   data() {
     return {
@@ -61,7 +63,8 @@ export default {
       song: prepareSong(song1),
       currentSongTime: 0,
       previousTime: null,
-      playedNotes: []
+      playedNotes: [],
+      score: 0
     }
   },
   created: function () {
@@ -70,13 +73,19 @@ export default {
   },
 
   computed: {
-    currentSongTimeInSec() {
-      // TODO: remove after debug
-      return Math.floor(this.currentSongTime)
+    playZoneY () {
+      return lookAheadTime / (lookAheadTime + lookBackTime) * 100
+    },
+
+    playZoneSpace () {
+      return playZoneDelta / (lookAheadTime + lookBackTime) * 100
     }
   },
 
   methods: {
+
+    // VERIFY WHETHER USER PLAYS GOOD NOTES OR NOT
+
     verifyNotes () {
       const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta  && note.timepoint > this.currentSongTime - playZoneDelta)
       let mistake = false
@@ -96,20 +105,25 @@ export default {
             mistake = true
           }
         }
-
         this.playedNotes.push(chord.id)
       }
 
       if (mistake) {
-        // TODO reset combo
         console.log('mistake')
       }
       else {
-        // TODO increment score
-        console.log('ok')
-
+        this.refreshScore()
       }
     },
+
+    // SCORE
+
+    refreshScore () {
+      this.score += 50
+    },
+
+    // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
+
     keyup: function (e) {
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
@@ -132,6 +146,8 @@ export default {
       }
       this.columns[index].highlighted = true
     },
+
+    // FALLING ANIMATION OF NOTES INSIDE WINDOW ACCORDING TO CURRENTIME AND SONG DURATION
 
     animate () {
       const currentTime = new Date().getTime() / 1000
@@ -172,5 +188,5 @@ export default {
 .container
   display: flex
   justify-content: center
-
+  position: relative
 </style>
