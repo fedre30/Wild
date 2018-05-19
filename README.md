@@ -24,5 +24,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 **Game** : game interface which regroups all sub-components
   * Column : falling note zone (one note for each column)
-     ** Note: note to be played by user (inside Column component)
+  
+     * Note: note to be played by user (inside Column component)
   * Score : points incremented when user play notes syncronously
