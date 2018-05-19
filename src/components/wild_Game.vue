@@ -26,6 +26,7 @@ import _ from 'lodash'
 // INITIALIZATION
 const lookAheadTime = 4
 const lookBackTime = 0.5
+const playZoneDelta = 0.1
 
 function prepareSong (song) {
   const songCopy = _.cloneDeep(song)
@@ -59,7 +60,8 @@ export default {
       notes: [],
       song: prepareSong(song1),
       currentSongTime: 0,
-      previousTime: null
+      previousTime: null,
+      playedNotes: []
     }
   },
   created: function () {
@@ -75,27 +77,59 @@ export default {
   },
 
   methods: {
+    verifyNotes () {
+      const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta  && note.timepoint > this.currentSongTime - playZoneDelta)
+      let mistake = false
+
+      if (notesToVerify.length === 0) {
+        mistake = true
+      }
+      else {
+        const chord = notesToVerify.sort((a, b) => a.timepoint < b.timepoint ? -1 : 1)[0]
+
+        for (let i = 0; i < this.columns.length; i++) {
+          const column = this.columns[i]
+          if (column.highlighted && chord.keys.indexOf(column.keyboard) === -1) {
+            mistake = true
+          }
+          else if (!column.highlighted && chord.keys.indexOf(column.keyboard) !== -1) {
+            mistake = true
+          }
+        }
+
+        this.playedNotes.push(chord.id)
+      }
+
+      if (mistake) {
+        // TODO reset combo
+        console.log('mistake')
+      }
+      else {
+        // TODO increment score
+        console.log('ok')
+
+      }
+    },
     keyup: function (e) {
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
       })
-      console.log(`keyup index: ${index}`);
       if (index <= -1) {
         return
       }
-      console.log(`keyup column: ${this.columns[index]}`);
       this.columns[index].highlighted = false
     },
     keydown: function (e) {
+      if (e.key === ' ') {
+        this.verifyNotes()
+        return
+      }
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
       })
-      console.log(`keydown index: ${index}`);
       if (index <= -1) {
         return
       }
-
-      console.log(`keydown column: ${this.columns[index]}`);
       this.columns[index].highlighted = true
     },
 
@@ -106,7 +140,7 @@ export default {
 
       const upperTime = lookAheadTime + this.currentSongTime
       const bottomTime = this.currentSongTime - lookBackTime
-      const notesArray = this.song.notes.filter((note) => note.timepoint < upperTime && note.timepoint > bottomTime)
+      const notesArray = this.song.notes.filter((note) => note.timepoint < upperTime && note.timepoint > bottomTime && this.playedNotes.findIndex((playedNoteID) => playedNoteID === note.id) === -1)
       this.notes = notesArray.map((note) => {
         const noteCopy = _.cloneDeep(note)
         noteCopy.y = (noteCopy.timepoint - bottomTime) / (upperTime - bottomTime)
