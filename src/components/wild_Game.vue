@@ -102,11 +102,11 @@ export default {
       }
 
       if (mistake) {
-        console.log('mistake')
+        this.resetCombo()
       }
       else {
         this.refreshScore()
-        if (correctNotes >= 10) {
+        if (correctNotes % 10 === 0) {
           this.getCombo()
         }
       }
@@ -117,15 +117,16 @@ export default {
     refreshScore () {
       correctNotes++
       this.score += 50
-      console.log(correctNotes)
+
     },
     getCombo () {
-      this.score = this.score * 5
+      this.score = this.score * 2
     },
+    
 
     // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
 
-    keyup: function (e) {
+    keyup: function (e){
 
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
