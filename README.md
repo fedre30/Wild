@@ -1,6 +1,6 @@
-# wild
+# Wild - Keyboard Hero
 
-> A Vue.js project
+> A Vue.js keyboard game. Looks like a guitar hero
 
 ## Build Setup
 
@@ -19,3 +19,12 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Components
+
+**Game** : game interface which regroups all sub-components
+  * Column : falling note zone (one note for each column)
+  
+     * Note: note to be played by user (inside Column component)
+  * Playzone : zone where notes have to be played
+  * Score : points incremented when user play notes syncronously
