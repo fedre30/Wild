@@ -1,5 +1,6 @@
 <template>
   <div class="startGame">
+    <h1 class="title">WILD - Keyboard Hero</h1>
     <div class="thumbnails">
       <thumbnail v-for="song in songs" :key="song.title" :song="song"></thumbnail>
     </div>
@@ -22,12 +23,6 @@ export default {
       ]
     }
   },
-
-  methods: {
-    startGame () {
-
-    }
-  }
 }
 </script>
 
@@ -38,6 +33,9 @@ export default {
   height: 100vh
   margin: 0
   background-color: black
+  .title
+    color: white
+    margin: 0 0 3rem 0
 .thumbnails
   width: 50%
   display: flex

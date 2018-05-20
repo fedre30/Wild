@@ -30,6 +30,7 @@ import _ from 'lodash'
 const lookAheadTime = 4
 const lookBackTime = 0.5
 const playZoneDelta = 0.5
+let correctNotes = 0
 
 export default {
   components: {Column, Note, Score, PlayZone},
@@ -81,6 +82,7 @@ export default {
       const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta && note.timepoint > this.currentSongTime - playZoneDelta)
       let mistake = false
 
+
       if (notesToVerify.length === 0) {
         mistake = true
       }
@@ -104,19 +106,26 @@ export default {
       }
       else {
         this.refreshScore()
+        if (correctNotes >= 10) {
+          this.getCombo()
+        }
       }
     },
 
     // SCORE
 
     refreshScore () {
+      correctNotes++
       this.score += 50
+      console.log(correctNotes)
+    },
+    getCombo () {
+      this.score = this.score * 5
     },
 
     // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
 
     keyup: function (e) {
-      console.log('ku', e.key);
 
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
@@ -127,7 +136,6 @@ export default {
       this.columns[index].highlighted = false
     },
     keydown: function (e) {
-      console.log('kd', e.key);
 
       if (e.key === ' ') {
         this.verifyNotes()
@@ -166,13 +174,14 @@ export default {
       this.currentSongTime = 0
       requestAnimationFrame(() => this.animate())
 
+      // FAKE CLICK
       const videoEl = this.$refs.video
-      function videoClickListener() {
+      function videoClickListener () {
         videoEl.play()
-        videoEl.removeEventListener('click', videoClickListener);
+        videoEl.removeEventListener('click', videoClickListener)
       }
-      videoEl.addEventListener('click', videoClickListener);
-      videoEl.click();
+      videoEl.addEventListener('click', videoClickListener)
+      videoEl.click()
     }
   },
 
@@ -199,7 +208,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-
 video
   width: 100%
   height: 100vh

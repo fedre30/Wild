@@ -7,9 +7,18 @@ export default prepareSong({
   name: 'Mighty Long Fall',
   thumbnail,
   notes: [
-    {keys: ['q', 'd'], timepoint: 2},
-    {keys: ['q', 's'], timepoint: 4},
-    {keys: ['q'], timepoint: 4.5}
+    {keys: ['q'], timepoint: 2},
+    {keys: ['q'], timepoint: 3},
+    {keys: ['q'], timepoint: 4},
+    {keys: ['q'], timepoint: 5},
+    {keys: ['q'], timepoint: 6},
+    {keys: ['q'], timepoint: 7},
+    {keys: ['q'], timepoint: 8},
+    {keys: ['q'], timepoint: 9},
+    {keys: ['q'], timepoint: 10},
+    {keys: ['q'], timepoint: 11},
+    {keys: ['q'], timepoint: 12},
+    {keys: ['q'], timepoint: 13},
   ],
   video
 })
