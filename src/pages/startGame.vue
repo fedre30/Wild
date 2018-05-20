@@ -9,8 +9,8 @@
 
 <script>
 import Thumbnail from '../components/wild_thumbnail.vue'
-import MightyLongFall from '../assets/MightyLongFall'
-import Yubaba from '../assets/Yubaba'
+import MightyLongFall from '../assets/songs/MightyLongFall'
+import BeMyGirl from '../assets/songs/beMyGirl'
 
 export default {
   components: {Thumbnail},
@@ -19,7 +19,7 @@ export default {
     return {
       songs: [
         MightyLongFall,
-        Yubaba
+        BeMyGirl
       ]
     }
   },

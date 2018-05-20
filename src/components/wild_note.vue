@@ -17,7 +17,7 @@ export default {
   width: 30px
   height: 30px
   border-radius: 100px
-  background-color: white
+  background-color: darkgrey
   position: absolute
   bottom: var(--y)
   left: 50%

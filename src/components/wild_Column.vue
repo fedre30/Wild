@@ -30,12 +30,12 @@ export default {
 .column
   width: 15vw
   height: 70vh
-  border: 1px solid white
+  border: 1px solid darkgrey
   margin: 0 20px
   position: relative
 
 .letters
-  color: white
+  color: darkgrey
   font-weight: bold
   font-size: 2rem
 

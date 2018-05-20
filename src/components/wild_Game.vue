@@ -122,7 +122,7 @@ export default {
     getCombo () {
       this.score = this.score * 2
     },
-    
+
 
     // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
 
@@ -222,7 +222,7 @@ video
 .header
   width: 100%
   z-index: 2000000
-  color: white
+  color: darkgrey
   height: 10vh
 .container
   display: flex
@@ -230,9 +230,5 @@ video
   position: relative
   z-index: 10000
   margin-top: 4rem
-.white
-  color: white
-  text-align: center
-  z-index: 30000
 
 </style>
