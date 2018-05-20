@@ -3,7 +3,7 @@
     <div class="column">
       <slot></slot>
     </div>
-    <div :class="{'right' : highlighted}">{{ keyboard.toUpperCase() }}</div>
+    <div class="letters" :class="{'right' : highlighted}">{{ keyboard.toUpperCase() }}</div>
   </div>
 </template>
 
@@ -21,8 +21,7 @@ export default {
       default: false,
       required: true
     }
-  },
-
+  }
 }
 </script>
 
@@ -31,14 +30,16 @@ export default {
 .column
   width: 15vw
   height: 70vh
-  border: 1px solid grey
+  border: 1px solid white
   margin: 0 20px
   position: relative
-.wrong
-  color: red
+
+.letters
+  color: white
+  font-weight: bold
   font-size: 2rem
+
 .right
-  color: green
-  font-size: 2rem
+  background-color: green
 
 </style>

@@ -17,6 +17,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
 .score
-  font-size: 1.5rem
-  color: black
+  font-size: 3rem
+  color: white
+  z-index: 2000000
+  position: absolute
+  top: 3vh
+  left: 45vw
 </style>

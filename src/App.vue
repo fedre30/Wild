@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <game></game>
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import Game from '@/components/wild_Game.vue'
+import Game from './pages/startGame.vue'
 
 export default {
   components: {Game},
@@ -13,12 +13,14 @@ export default {
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

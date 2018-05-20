@@ -1,13 +1,17 @@
 <template>
   <div class="game">
-    <h1>Guitar Hero</h1>
-    <Score :score="score"></Score>
-    <div class="container">
-      <Column :keyboard="column.keyboard" :highlighted="column.highlighted" v-for="column in columns" :key="column.keyboard">
-        <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
-      </Column>
-      <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
-    </div>
+    <template v-if="typeof song !== 'undefined'">
+      <video :src="song.video" ref="video"></video>
+      <header class="header white">
+        <Score :score="score"></Score>
+      </header>
+      <div class="container">
+        <Column :keyboard="column.keyboard" :highlighted="column.highlighted" v-for="column in columns" :key="column.keyboard">
+          <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
+          <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
+        </Column>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -19,36 +23,21 @@ import Note from './wild_note.vue'
 import Score from './wild_score.vue'
 import PlayZone from './wild_playZone.vue'
 
-// ASSETS
-import song1 from '../assets/song1'
-
 // LIBRARIES
 import _ from 'lodash'
 
 // INITIALIZATION
 const lookAheadTime = 4
 const lookBackTime = 0.5
-const playZoneDelta = 0.1
-
-function prepareSong (song) {
-  const songCopy = _.cloneDeep(song)
-  songCopy.notes = songCopy.notes.map((note, index) => {
-    note.id = index
-    return note
-  })
-  return songCopy
-}
+const playZoneDelta = 0.5
 
 export default {
   components: {Column, Note, Score, PlayZone},
   name: 'Game',
-  data() {
+  data () {
     return {
       columns: [
         {
-          keyboard: 'z',
-          highlighted: false
-        }, {
           keyboard: 'q',
           highlighted: false
         }, {
@@ -57,10 +46,12 @@ export default {
         }, {
           keyboard: 'd',
           highlighted: false
+        }, {
+          keyboard: 'f',
+          highlighted: false
         }
       ],
       notes: [],
-      song: prepareSong(song1),
       currentSongTime: 0,
       previousTime: null,
       playedNotes: [],
@@ -68,8 +59,8 @@ export default {
     }
   },
   created: function () {
-    window.addEventListener('keydown', this.keydown)
-    window.addEventListener('keyup', this.keyup)
+    document.addEventListener('keydown', this.keydown)
+    document.addEventListener('keyup', this.keyup)
   },
 
   computed: {
@@ -87,7 +78,7 @@ export default {
     // VERIFY WHETHER USER PLAYS GOOD NOTES OR NOT
 
     verifyNotes () {
-      const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta  && note.timepoint > this.currentSongTime - playZoneDelta)
+      const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta && note.timepoint > this.currentSongTime - playZoneDelta)
       let mistake = false
 
       if (notesToVerify.length === 0) {
@@ -125,6 +116,8 @@ export default {
     // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
 
     keyup: function (e) {
+      console.log('ku', e.key);
+
       const index = this.columns.findIndex(function (column) {
         return e.key === column.keyboard
       })
@@ -134,6 +127,8 @@ export default {
       this.columns[index].highlighted = false
     },
     keydown: function (e) {
+      console.log('kd', e.key);
+
       if (e.key === ' ') {
         this.verifyNotes()
         return
@@ -168,25 +163,67 @@ export default {
     },
 
     startGame () {
-      this.currentSongTime = 0;
+      this.currentSongTime = 0
       requestAnimationFrame(() => this.animate())
+
+      const videoEl = this.$refs.video
+      function videoClickListener() {
+        videoEl.play()
+        videoEl.removeEventListener('click', videoClickListener);
+      }
+      videoEl.addEventListener('click', videoClickListener);
+      videoEl.click();
+    }
+  },
+
+  props: {
+    song: {
+      type: Object,
+      required: true
     }
   },
 
   mounted () {
-    this.startGame()
+    if (this.song) {
+      this.startGame()
+    } else {
+      this.$router.replace({name: 'home'})
+    }
   },
   beforeDestroy: function () {
-    window.removeEventListener('keydown', this.keydown)
-    window.removeEventListener('keyup', this.keyup)
+    document.removeEventListener('keydown', this.keydown)
+    document.removeEventListener('keyup', this.keyup)
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+
+video
+  width: 100%
+  height: 100vh
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+
+.header
+  width: 100%
+  z-index: 2000000
+  color: white
+  height: 10vh
 .container
   display: flex
   justify-content: center
   position: relative
+  z-index: 10000
+  margin-top: 4rem
+.white
+  color: white
+  text-align: center
+  z-index: 30000
+
 </style>
