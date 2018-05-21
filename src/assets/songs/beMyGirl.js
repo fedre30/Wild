@@ -1,5 +1,5 @@
 import thumbnail from '../jet.jpg'
-import video from '../jet.mov'
+import video from '../jet.mp4'
 import {prepareSong} from '../../utils'
 
 export default prepareSong({
@@ -7,14 +7,9 @@ export default prepareSong({
   name: 'Are you gonna be my girl?',
   thumbnail,
   notes: [
-    {keys: ['q'], timepoint: 4.3},
-    {keys: ['d'], timepoint: 4.8},
-    {keys: ['s'], timepoint: 5.3},
-    {keys: ['f'], timepoint: 5.8},
-    {keys: ['q'], timepoint: 6.5},
-    {keys: ['d'], timepoint: 7},
-    {keys: ['s'], timepoint: 7.5}
-    
+    {keys: ['q', 'd'], timepoint: 2},
+    {keys: ['q', 's'], timepoint: 4},
+    {keys: ['q'], timepoint: 4.5}
   ],
   video
 })

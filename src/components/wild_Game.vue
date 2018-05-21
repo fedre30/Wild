@@ -31,6 +31,7 @@ const lookAheadTime = 4
 const lookBackTime = 0.5
 const playZoneDelta = 0.5
 let correctNotes = 0
+const editMode = true
 
 export default {
   components: {Column, Note, Score, PlayZone},
@@ -53,10 +54,10 @@ export default {
         }
       ],
       notes: [],
-      currentSongTime: 0,
       previousTime: null,
       playedNotes: [],
-      score: 0
+      score: 0,
+      editor: []
     }
   },
   created: function () {
@@ -77,9 +78,16 @@ export default {
   methods: {
 
     // VERIFY WHETHER USER PLAYS GOOD NOTES OR NOT
+    currentSongTime () {
+      try {
+        return this.$refs.video.currentTime
+      } catch(exc) {
+        return 0
+      }
+    },
 
     verifyNotes () {
-      const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime + playZoneDelta && note.timepoint > this.currentSongTime - playZoneDelta)
+      const notesToVerify = this.notes.filter((note) => note.timepoint < this.currentSongTime() + playZoneDelta && note.timepoint > this.currentSongTime() - playZoneDelta)
       let mistake = false
 
 
@@ -119,10 +127,13 @@ export default {
       this.score += 50
 
     },
+
     getCombo () {
       this.score = this.score * 2
     },
-
+    resetCombo (){
+      correctNotes = 0
+    },
 
     // KEYUP AND KEYDOWN FUNCTIONS TO BE ATTACHED TO EVENTS
 
@@ -137,6 +148,16 @@ export default {
       this.columns[index].highlighted = false
     },
     keydown: function (e) {
+      if (editMode) {
+        if (e.key.toLowerCase() === 'o') {
+          console.log(JSON.stringify(this.editor, null, 2))
+          return
+        }
+
+        if (e.key === ' ') {
+          this.editor.push({keys: this.columns.filter(c => c.highlighted).map(c => c.keyboard), timepoint: this.currentSongTime()})
+        }
+      }
 
       if (e.key === ' ') {
         this.verifyNotes()
@@ -151,15 +172,14 @@ export default {
       this.columns[index].highlighted = true
     },
 
-    // FALLING ANIMATION OF NOTES INSIDE WINDOW ACCORDING TO CURRENTIME AND SONG DURATION
+    // FALLING ANIMATION OF NOTES INSIDE WINDOW ACCORDING TO CURRENTTIME AND SONG DURATION
 
     animate () {
       const currentTime = new Date().getTime() / 1000
       const deltaTime = this.previousTime !== null ? currentTime - this.previousTime : 0
-      this.currentSongTime += deltaTime
 
-      const upperTime = lookAheadTime + this.currentSongTime
-      const bottomTime = this.currentSongTime - lookBackTime
+      const upperTime = lookAheadTime + this.currentSongTime()
+      const bottomTime = this.currentSongTime() - lookBackTime
       const notesArray = this.song.notes.filter((note) => note.timepoint < upperTime && note.timepoint > bottomTime && this.playedNotes.findIndex((playedNoteID) => playedNoteID === note.id) === -1)
       this.notes = notesArray.map((note) => {
         const noteCopy = _.cloneDeep(note)
@@ -172,7 +192,6 @@ export default {
     },
 
     startGame () {
-      this.currentSongTime = 0
       requestAnimationFrame(() => this.animate())
 
       // FAKE CLICK
@@ -222,7 +241,7 @@ video
 .header
   width: 100%
   z-index: 2000000
-  color: darkgrey
+  color: white
   height: 10vh
 .container
   display: flex
@@ -230,5 +249,9 @@ video
   position: relative
   z-index: 10000
   margin-top: 4rem
+.white
+  color: white
+  text-align: center
+  z-index: 30000
 
 </style>

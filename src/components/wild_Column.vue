@@ -35,7 +35,7 @@ export default {
   position: relative
 
 .letters
-  color: darkgrey
+  color: white
   font-weight: bold
   font-size: 2rem
 

@@ -18,7 +18,7 @@ export default {
 <style scoped lang="sass">
 .score
   font-size: 3rem
-  color: darkgrey
+  color: white
   z-index: 2000000
   position: absolute
   top: 3vh
