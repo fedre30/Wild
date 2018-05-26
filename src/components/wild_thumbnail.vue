@@ -1,11 +1,12 @@
 <template>
-  <router-link :to="{name: 'game', params: {song: song}}">
     <div class="thumbnail">
         <div class="thumb-image"><img :src="song.thumbnail"></div>
-        <h3> {{ song.title }}</h3>
+        <h3> {{ song.name }}</h3>
         <p>{{ song.artist }}</p>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Easy</div></router-link>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Intermediate</div></router-link>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Hard</div></router-link>
     </div>
-  </router-link>
 </template>
 
 <script>
@@ -33,4 +34,22 @@ export default {
     height: 300px
     img
       width: 100%
+
+.thumbnail-link
+  text-decoration: none
+.button-play
+  width: 100px
+  background-color: white
+  color: black
+  text-align: center
+  padding: 1.5rem
+  line-height: 5px
+  margin: 3vh auto
+  border-radius: 1rem
+  font-size: 1.2rem
+
+.button-play:hover
+  background-color: darkred
+  color: white
+
 </style>

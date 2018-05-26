@@ -10,6 +10,7 @@
           <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
           <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
         </Column>
+        <div class="stop" v-on:click="this.checkEndGame()">Stop</div>
       </div>
     </template>
   </div>
@@ -32,6 +33,7 @@ const lookBackTime = 0.5
 const playZoneDelta = 0.5
 let correctNotes = 0
 const editMode = true
+const endDelay = 1
 
 export default {
   components: {Column, Note, Score, PlayZone},
@@ -174,7 +176,7 @@ export default {
 
     // FALLING ANIMATION OF NOTES INSIDE WINDOW ACCORDING TO CURRENTTIME AND SONG DURATION
 
-    animate () {
+    updateGame () {
       const currentTime = new Date().getTime() / 1000
       const deltaTime = this.previousTime !== null ? currentTime - this.previousTime : 0
 
@@ -186,13 +188,15 @@ export default {
         noteCopy.y = (noteCopy.timepoint - bottomTime) / (upperTime - bottomTime)
         return noteCopy
       })
-
+      this.checkEndGame()
       this.previousTime = currentTime
-      requestAnimationFrame(() => this.animate())
+      requestAnimationFrame(() => this.updateGame())
     },
 
+    // START GAME
+
     startGame () {
-      requestAnimationFrame(() => this.animate())
+      requestAnimationFrame(() => this.updateGame())
 
       // FAKE CLICK
       const videoEl = this.$refs.video
@@ -202,6 +206,16 @@ export default {
       }
       videoEl.addEventListener('click', videoClickListener)
       videoEl.click()
+    },
+
+    // END GAME
+
+    checkEndGame () {
+      const sortedNotes = this.song.notes.sort((a, b) => a.timepoint < b.timepoint ? -1 : 1)
+      const lastNoteIndex = sortedNotes.length - 1
+      if (this.song.notes[lastNoteIndex].timepoint + endDelay < this.currentSongTime()) {
+        this.$router.replace({name: 'endGame', params: {score: this.score, rate: Math.floor(this.score / this.song.notes.length)}})
+      }
     }
   },
 
@@ -209,7 +223,7 @@ export default {
     song: {
       type: Object,
       required: true
-    }
+    },
   },
 
   mounted () {
@@ -253,5 +267,8 @@ video
   color: white
   text-align: center
   z-index: 30000
+
+.stop
+  color: white
 
 </style>
