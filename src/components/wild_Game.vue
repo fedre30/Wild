@@ -129,7 +129,7 @@ export default {
     },
 
     getCombo () {
-      this.score = this.score * 2
+      this.score = Math.floor(this.score * 1.5)
     },
     resetCombo (){
       correctNotes = 0
