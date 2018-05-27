@@ -3,9 +3,9 @@
         <div class="thumb-image"><img :src="song.thumbnail"></div>
         <h3> {{ song.name }}</h3>
         <p>{{ song.artist }}</p>
-      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Easy</div></router-link>
-      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Intermediate</div></router-link>
-      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song}}"><div class="button-play">Hard</div></router-link>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song, difficulty: 'easy'}}"><div class="button-play">Easy</div></router-link>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song, difficulty: 'intermediate'}}"><div class="button-play">Intermediate</div></router-link>
+      <router-link class = "thumbnail-link" :to="{name: 'game', params: {song: song, difficulty: 'hard'}}"><div class="button-play">Hard</div></router-link>
     </div>
 </template>
 

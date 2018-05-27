@@ -40,31 +40,35 @@ export default {
   name: 'Game',
   data () {
     return {
-      columns: [
-        {
-          keyboard: 'q',
-          highlighted: false
-        }, {
-          keyboard: 's',
-          highlighted: false
-        }, {
-          keyboard: 'd',
-          highlighted: false
-        }, {
-          keyboard: 'f',
-          highlighted: false
-        }
-      ],
+      columns: [],
       notes: [],
       previousTime: null,
       playedNotes: [],
       score: 0,
-      editor: []
+      editor: [],
+      visibleColumns: []
     }
   },
   created: function () {
     document.addEventListener('keydown', this.keydown)
     document.addEventListener('keyup', this.keyup)
+
+    if (this.difficulty === 'easy') {
+      this.visibleColumns = ['q', 's', 'd']
+    }
+    else if (this.difficulty === 'intermediate') {
+      this.visibleColumns = ['q', 's', 'd', 'f']
+    }
+    else if (this.difficulty === 'hard') {
+      this.visibleColumns = ['q', 's', 'd', 'f', 'g']
+    }
+
+
+
+    this.columns = this.visibleColumns.map((key) => ({
+      keyboard: key,
+      highlighted: false
+    }))
   },
 
   computed: {
@@ -188,6 +192,9 @@ export default {
         noteCopy.y = (noteCopy.timepoint - bottomTime) / (upperTime - bottomTime)
         return noteCopy
       })
+      this.notes.forEach((note) => {
+        note.keys = note.keys.filter((key) => this.visibleColumns.includes(key))
+      })
       this.checkEndGame()
       this.previousTime = currentTime
       requestAnimationFrame(() => this.updateGame())
@@ -224,6 +231,11 @@ export default {
       type: Object,
       required: true
     },
+
+    difficulty: {
+      type: String,
+      default: 'easy'
+    }
   },
 
   mounted () {
