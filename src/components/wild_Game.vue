@@ -10,7 +10,6 @@
           <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
           <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
         </Column>
-        <div class="stop" v-on:click="this.checkEndGame()">Stop</div>
       </div>
     </template>
   </div>
