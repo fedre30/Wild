@@ -114,10 +114,10 @@ updateGame () {
 * GameEnd : 
   * props : score
   
-  ## Song Editor
+## Song Editor
 
-  This feature was developed in order to simplify sheet music writing.
-  It generates all notes (keys and timepoint) when user press on a song (with no sheet music) and log it on the console. 
-  So it's just about copy it and paste in song's script.
+This feature was developed in order to simplify sheet music writing.
+It generates all notes (keys and timepoint) when user press on a song (with no sheet music) and log it on the console. 
+So it's just about copy it and paste in song's script.
 
 
