@@ -29,10 +29,14 @@ export default {
 <style scoped lang="sass">
 .column
   width: 15vw
-  height: 70vh
+  height: 75vh
   border: 1px solid darkgrey
   margin: 0 20px
-  position: relative
+  transform: perspective(650px) rotateX(25deg)
+  transform-origin: 50% 100%
+  text-align: justify
+  font-weight: bold
+  overflow: hidden
 
 .letters
   color: white
@@ -41,5 +45,8 @@ export default {
 
 .right
   background-color: green
+  width: 90%
+  text-align: center
+  margin: 0 auto
 
 </style>

@@ -18,9 +18,16 @@ export default {
 <style scoped lang="sass">
 .score
   font-size: 3rem
+  width: 300px
+  height: 50px
+  background-color: darkred
+  padding: 1rem
+  line-height: 50px
+  border-radius: 0.2em
   color: white
+  font-weight: 800
   z-index: 2000000
-  position: absolute
+  position: fixed
   top: 3vh
-  left: 45vw
+  left: 42%
 </style>

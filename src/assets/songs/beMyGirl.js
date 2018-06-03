@@ -1,5 +1,5 @@
 import thumbnail from '../jet.jpg'
-import video from '../jet.mp4'
+import video from '../bemygirl.mov'
 import {prepareSong} from '../../utils'
 
 export default prepareSong({
@@ -9,2291 +9,2318 @@ export default prepareSong({
   notes: [
     {
       "keys": [
-        "s",
         "d"
       ],
-      "timepoint": 4.004222
+      "timepoint": 4.025422
     },
     {
       "keys": [
-        "s",
         "d"
       ],
-      "timepoint": 4.324416
+      "timepoint": 4.341139
     },
     {
       "keys": [
-        "s",
         "d"
       ],
-      "timepoint": 4.573192
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 5.086684
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 5.443705
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 5.782678
+      "timepoint": 4.617087
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 6.054622
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 6.350321
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 6.911735
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 7.435577
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 7.833628
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 8.160967
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 8.402028
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 8.692098
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 9.245198
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 9.802775
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 10.386916
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 10.682278
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 11.007668
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 11.509831
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 13.383756
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 13.682007
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 13.980695
-    },
-    {
-      "keys": [],
-      "timepoint": 14.506995
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 14.803232
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 15.098269
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 15.757507
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 16.013595
-    },
-    {
-      "keys": [],
-      "timepoint": 16.330629
-    },
-    {
-      "keys": [],
-      "timepoint": 16.845537
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 17.475463
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 17.809914
+      "timepoint": 5.061116
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 18.052316
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 18.365195
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 18.669418
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 19.155633
-    },
-    {
-      "keys": [],
-      "timepoint": 19.479429
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 19.784219
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 20.051055
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 20.334031
-    },
-    {
-      "keys": [
-        "q",
-        "f"
-      ],
-      "timepoint": 22.637495
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 23.280109
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 23.72527
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 24.058565
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 24.294668
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 24.507648
-    },
-    {
-      "keys": [
-        "q",
-        "f"
-      ],
-      "timepoint": 24.734043
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 24.989161
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 25.258078
-    },
-    {
-      "keys": [],
-      "timepoint": 25.531404
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 26.000862
-    },
-    {
-      "keys": [],
-      "timepoint": 26.318399
+      "timepoint": 5.385537
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 26.600795
+      "timepoint": 5.662028
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 26.811053
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 27.057821
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 27.316582
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 27.603951
-    },
-    {
-      "keys": [],
-      "timepoint": 27.833693
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 28.262554
-    },
-    {
-      "keys": [],
-      "timepoint": 28.49234
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 28.719019
-    },
-    {
-      "keys": [],
-      "timepoint": 28.945042
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 29.184249
-    },
-    {
-      "keys": [
-        "q",
-        "f"
-      ],
-      "timepoint": 29.449006
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 29.801897
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 30.020492
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 30.300276
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 30.591693
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 30.856469
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 31.179969
-    },
-    {
-      "keys": [
-        "q",
-        "s",
-        "d"
-      ],
-      "timepoint": 31.461703
-    },
-    {
-      "keys": [
-        "q",
-        "s",
-        "d"
-      ],
-      "timepoint": 31.776935
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 36.372877
-    },
-    {
-      "keys": [],
-      "timepoint": 36.636569
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 36.899729
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 37.268032
+      "timepoint": 5.817698
     },
     {
       "keys": [
         "f"
       ],
-      "timepoint": 37.472024
+      "timepoint": 5.957715
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 6.323081
+    },
+    {
+      "keys": [],
+      "timepoint": 6.589939
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 37.681711
+      "timepoint": 6.929833
+    },
+    {
+      "keys": [],
+      "timepoint": 7.431845
+    },
+    {
+      "keys": [],
+      "timepoint": 7.772196
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 37.91901
+      "timepoint": 8.020707
+    },
+    {
+      "keys": [],
+      "timepoint": 8.19002
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 8.431433
+    },
+    {
+      "keys": [],
+      "timepoint": 8.708681
+    },
+    {
+      "keys": [],
+      "timepoint": 8.986372
+    },
+    {
+      "keys": [],
+      "timepoint": 9.294988
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 9.789214
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 38.133656
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 38.389729
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 38.628963
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 40.899533
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 41.1673
+      "timepoint": 10.125297
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 41.478643
+      "timepoint": 10.39198
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 41.946536
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 42.237049
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 42.705053
+      "timepoint": 10.553824
     },
     {
       "keys": [],
-      "timepoint": 42.939171
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 43.235535
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 47.179007
-    },
-    {
-      "keys": [
-        "q",
-        "s"
-      ],
-      "timepoint": 47.422374
+      "timepoint": 10.778674
     },
     {
       "keys": [],
-      "timepoint": 47.775597
+      "timepoint": 11.059109
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 11.355686
+    },
+    {
+      "keys": [],
+      "timepoint": 11.637021
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 48.067645
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 48.376096
+      "timepoint": 12.070158
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 48.857947
+      "timepoint": 12.382358
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 12.552965
+    },
+    {
+      "keys": [],
+      "timepoint": 12.787221
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 49.16611
+      "timepoint": 13.079215
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 13.409896
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 13.682938
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 13.983208
     },
     {
       "keys": [
         "f"
       ],
-      "timepoint": 49.384438
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 49.651149
+      "timepoint": 14.500321
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 49.938504
+      "timepoint": 14.762048
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 15.016765
+    },
+    {
+      "keys": [],
+      "timepoint": 15.205397
+    },
+    {
+      "keys": [],
+      "timepoint": 15.431176
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 15.737335
+    },
+    {
+      "keys": [],
+      "timepoint": 16.009851
+    },
+    {
+      "keys": [],
+      "timepoint": 16.314061
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 16.795298
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 17.090156
+    },
+    {
+      "keys": [],
+      "timepoint": 17.347283
+    },
+    {
+      "keys": [],
+      "timepoint": 17.583334
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 17.981472
+    },
+    {
+      "keys": [],
+      "timepoint": 18.270527
+    },
+    {
+      "keys": [],
+      "timepoint": 18.571024
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 19.038642
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 19.36057
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 19.567173
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 19.803566
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 50.202682
+      "timepoint": 20.090798
     },
     {
       "keys": [],
-      "timepoint": 50.448721
-    },
-    {
-      "keys": [],
-      "timepoint": 50.805301
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 51.070331
+      "timepoint": 22.446072
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 51.33871
+      "timepoint": 22.807028
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 22.997963
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 23.279337
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 51.686038
+      "timepoint": 23.678331
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 23.934584
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 51.955248
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 52.313042
-    },
-    {
-      "keys": [],
-      "timepoint": 52.69525
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 53.088862
-    },
-    {
-      "keys": [],
-      "timepoint": 53.466804
+      "timepoint": 24.172914
     },
     {
       "keys": [
         "s",
         "f"
       ],
-      "timepoint": 54.858713
+      "timepoint": 24.34861
     },
     {
       "keys": [],
-      "timepoint": 55.268602
-    },
-    {
-      "keys": [],
-      "timepoint": 55.711444
-    },
-    {
-      "keys": [],
-      "timepoint": 57.144423
+      "timepoint": 24.585703
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 57.552435
+      "timepoint": 24.916663
     },
     {
-      "keys": [],
-      "timepoint": 57.947639
+      "keys": [
+        "d"
+      ],
+      "timepoint": 25.19036
+    },
+    {
+      "keys": [
+        "q",
+        "d"
+      ],
+      "timepoint": 25.481829
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 58.523115
+      "timepoint": 25.86516
     },
     {
       "keys": [
-        "d"
+        "f"
       ],
-      "timepoint": 58.716904
+      "timepoint": 26.170298
+    },
+    {
+      "keys": [],
+      "timepoint": 26.385361
+    },
+    {
+      "keys": [],
+      "timepoint": 26.539015
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 26.717721
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 26.896465
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 27.193126
+    },
+    {
+      "keys": [],
+      "timepoint": 27.439331
     },
     {
       "keys": [
         "s",
         "f"
       ],
-      "timepoint": 59.346494
+      "timepoint": 27.764489
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 28.128376
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 28.427124
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 28.639162
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 28.843287
+    },
+    {
+      "keys": [],
+      "timepoint": 29.037796
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 29.244978
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 29.514122
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 29.736674
+    },
+    {
+      "keys": [],
+      "timepoint": 29.940217
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 30.214488
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 30.434353
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 30.643935
+    },
+    {
+      "keys": [],
+      "timepoint": 30.856778
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 31.197322
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 31.479585
     },
     {
       "keys": [
         "s",
         "f"
       ],
-      "timepoint": 59.724561
+      "timepoint": 31.754121
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 36.358456
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 36.638389
+    },
+    {
+      "keys": [],
+      "timepoint": 36.914957
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 37.251677
     },
     {
       "keys": [
         "s",
         "f"
       ],
-      "timepoint": 60.110644
+      "timepoint": 37.406488
     },
     {
       "keys": [
-        "s",
-        "f"
+        "s"
       ],
-      "timepoint": 60.612295
+      "timepoint": 37.696859
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 37.916076
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 60.932153
+      "timepoint": 38.085832
     },
     {
       "keys": [
-        "s"
-      ],
-      "timepoint": 61.115496
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 61.274837
-    },
-    {
-      "keys": [
+        "q",
         "f"
       ],
-      "timepoint": 61.494868
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 61.729828
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 61.968104
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 62.266539
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 62.633009
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 62.918937
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 63.203208
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 63.510135
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 63.799784
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 64.072622
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 64.340192
+      "timepoint": 38.358549
     },
     {
       "keys": [],
-      "timepoint": 64.606664
+      "timepoint": 40.900675
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 64.892106
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 65.191697
+      "timepoint": 41.210808
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 65.413908
+      "timepoint": 41.482457
     },
     {
       "keys": [
-        "q",
-        "d"
+        "f"
       ],
-      "timepoint": 65.836909
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 66.117808
+      "timepoint": 41.787985
     },
     {
       "keys": [],
-      "timepoint": 66.398846
+      "timepoint": 41.969822
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 42.252601
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 66.666685
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 66.906937
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 67.167819
+      "timepoint": 42.499933
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 67.446233
+      "timepoint": 42.673214
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 67.67869
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 67.941111
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.443302
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.526571
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.611623
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.695772
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.77921
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.864094
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 68.946984
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 69.030515
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 69.206425
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 70.656819
-    },
-    {
-      "keys": [],
-      "timepoint": 71.055068
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 71.465561
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 72.043701
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 72.300624
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 73.192031
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 73.446127
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 73.6636
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 75.265487
-    },
-    {
-      "keys": [],
-      "timepoint": 75.549251
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 75.797579
-    },
-    {
-      "keys": [
-        "s",
-        "d"
-      ],
-      "timepoint": 75.968257
+      "timepoint": 42.908453
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 76.323008
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 76.606375
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 76.78218
+      "timepoint": 43.198393
     },
     {
       "keys": [],
-      "timepoint": 76.953535
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 77.192341
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 77.693321
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 77.77741
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 77.861222
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 77.945821
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.031739
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.114924
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.198503
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.281602
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.365698
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 78.449486
-    },
-    {
-      "keys": [],
-      "timepoint": 78.75524
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 79.075253
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 79.337059
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 79.618355
-    },
-    {
-      "keys": [],
-      "timepoint": 79.91137
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 80.256348
-    },
-    {
-      "keys": [],
-      "timepoint": 80.65656
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 81.209103
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 81.515609
+      "timepoint": 47.829418
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 81.949582
+      "timepoint": 48.105461
     },
     {
       "keys": [],
-      "timepoint": 82.548241
-    },
-    {
-      "keys": [],
-      "timepoint": 83.049263
+      "timepoint": 48.356542
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 86.701929
-    },
-    {
-      "keys": [],
-      "timepoint": 86.983811
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 87.267769
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 87.711233
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 87.966303
-    },
-    {
-      "keys": [],
-      "timepoint": 88.217376
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 88.436974
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 88.672181
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 88.964982
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 89.26648
-    },
-    {
-      "keys": [],
-      "timepoint": 89.534741
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 90.00114
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 90.265349
+      "timepoint": 48.672867
     },
     {
       "keys": [
         "f"
       ],
-      "timepoint": 90.499044
+      "timepoint": 48.878896
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 49.081819
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 90.727962
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 90.945857
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 91.244497
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 91.537426
-    },
-    {
-      "keys": [],
-      "timepoint": 91.81452
+      "timepoint": 49.340999
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 92.299014
+      "timepoint": 49.501191
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 49.642394
     },
     {
       "keys": [
         "d"
       ],
-      "timepoint": 92.548764
+      "timepoint": 49.813552
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 50.099012
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 50.378556
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 50.646903
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 50.922615
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 51.211654
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 51.454184
     },
     {
       "keys": [
         "f"
       ],
-      "timepoint": 92.775478
+      "timepoint": 51.725115
     },
     {
       "keys": [],
-      "timepoint": 93.004537
+      "timepoint": 52.061607
     },
     {
       "keys": [],
-      "timepoint": 93.255664
+      "timepoint": 52.562796
     },
     {
       "keys": [
-        "s"
-      ],
-      "timepoint": 93.572477
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 93.808061
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 94.13209
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 94.383218
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 94.607875
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 94.907881
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 95.157916
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 95.399804
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 95.621187
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 95.849308
-    },
-    {
-      "keys": [],
-      "timepoint": 96.159529
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 100.414517
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 100.682318
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 100.932527
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 101.222969
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 101.422754
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 101.631829
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 101.854121
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 102.065944
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 102.343711
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 102.627574
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 104.941807
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 105.207458
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 105.478429
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 105.760223
-    },
-    {
-      "keys": [],
-      "timepoint": 105.985174
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 106.273972
-    },
-    {
-      "keys": [],
-      "timepoint": 106.52634
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 106.839167
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 107.117295
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 111.855955
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 112.144096
-    },
-    {
-      "keys": [],
-      "timepoint": 112.386865
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 112.658996
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 112.939236
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 113.233875
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 113.426585
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 113.648513
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 113.873717
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 114.140056
-    },
-    {
-      "keys": [],
-      "timepoint": 114.376184
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 114.709608
-    },
-    {
-      "keys": [],
-      "timepoint": 115.005804
-    },
-    {
-      "keys": [],
-      "timepoint": 115.302834
-    },
-    {
-      "keys": [],
-      "timepoint": 115.565339
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 115.969097
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 116.584157
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 117.04033
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 117.447429
-    },
-    {
-      "keys": [],
-      "timepoint": 118.880681
-    },
-    {
-      "keys": [
-        "q",
-        "d"
-      ],
-      "timepoint": 119.293402
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 119.71046
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 120.211506
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 120.456002
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 120.712003
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 121.170221
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 121.573283
-    },
-    {
-      "keys": [],
-      "timepoint": 121.931568
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 122.576639
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 122.788217
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 123.366872
-    },
-    {
-      "keys": [],
-      "timepoint": 123.7861
-    },
-    {
-      "keys": [],
-      "timepoint": 124.177131
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 125.753403
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 125.981037
-    },
-    {
-      "keys": [],
-      "timepoint": 126.201255
-    },
-    {
-      "keys": [],
-      "timepoint": 126.437272
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 126.69738
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 126.973899
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 127.247469
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 127.482798
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 127.706627
-    },
-    {
-      "keys": [],
-      "timepoint": 127.930329
-    },
-    {
-      "keys": [],
-      "timepoint": 128.187972
-    },
-    {
-      "keys": [],
-      "timepoint": 128.687791
-    },
-    {
-      "keys": [
-        "q",
         "d",
         "f"
       ],
-      "timepoint": 128.970718
+      "timepoint": 53.050253
+    },
+    {
+      "keys": [
+        "s",
+        "d"
+      ],
+      "timepoint": 53.483424
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 53.947884
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 54.245921
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 54.526066
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 54.873208
+    },
+    {
+      "keys": [
+        "s",
+        "d",
+        "f"
+      ],
+      "timepoint": 55.326528
+    },
+    {
+      "keys": [
+        "d",
+        "f"
+      ],
+      "timepoint": 55.768949
+    },
+    {
+      "keys": [],
+      "timepoint": 56.258973
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 56.745526
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 57.12096
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 57.560912
+    },
+    {
+      "keys": [],
+      "timepoint": 57.943774
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 58.496987
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 58.643723
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 58.876504
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 59.332728
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 59.746922
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 60.141679
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 61.547158
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 61.808943
+    },
+    {
+      "keys": [],
+      "timepoint": 62.023438
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 62.298752
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 62.594332
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 62.874675
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 63.132373
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 63.299765
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 63.60483
+    },
+    {
+      "keys": [],
+      "timepoint": 63.835258
+    },
+    {
+      "keys": [],
+      "timepoint": 64.102092
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 64.331062
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 64.492335
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 64.767876
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 65.002626
+    },
+    {
+      "keys": [],
+      "timepoint": 65.285688
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 65.584752
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 65.875787
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 66.119451
+    },
+    {
+      "keys": [],
+      "timepoint": 66.402548
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 66.625879
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 66.900551
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 67.145306
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 67.361527
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 67.549011
+    },
+    {
+      "keys": [],
+      "timepoint": 67.688275
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 67.93088
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 68.432736
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 68.520198
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 68.598484
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 68.685625
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 68.775418
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 69.091413
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 69.355244
+    },
+    {
+      "keys": [],
+      "timepoint": 69.574809
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 69.83998
+    },
+    {
+      "keys": [],
+      "timepoint": 70.089359
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 70.264373
+    },
+    {
+      "keys": [
+        "q"
+      ],
+      "timepoint": 70.590416
     },
     {
       "keys": [
         "q",
         "f"
       ],
-      "timepoint": 129.247937
+      "timepoint": 71.001703
     },
     {
       "keys": [
         "q",
         "f"
       ],
-      "timepoint": 129.490675
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 129.743616
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 130.015561
-    },
-    {
-      "keys": [],
-      "timepoint": 130.227981
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 130.527052
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 130.773611
-    },
-    {
-      "keys": [],
-      "timepoint": 131.006942
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 131.231858
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 131.482732
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 131.786289
+      "timepoint": 71.44594
     },
     {
       "keys": [
         "f"
       ],
-      "timepoint": 131.999699
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.501573
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.585375
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.670488
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.754657
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.837683
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 132.921078
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 133.003647
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 133.088396
-    },
-    {
-      "keys": [],
-      "timepoint": 133.335974
-    },
-    {
-      "keys": [],
-      "timepoint": 133.628246
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 133.86367
-    },
-    {
-      "keys": [],
-      "timepoint": 134.06783
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 134.254467
-    },
-    {
-      "keys": [],
-      "timepoint": 134.499028
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 134.7817
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 135.053044
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 135.294389
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 135.573465
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 135.800532
-    },
-    {
-      "keys": [],
-      "timepoint": 135.999534
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 136.205065
-    },
-    {
-      "keys": [],
-      "timepoint": 136.43994
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 136.694412
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 137.297047
-    },
-    {
-      "keys": [],
-      "timepoint": 137.499978
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 137.697664
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 137.953765
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 138.18904
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 138.463252
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 138.778762
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 139.098445
-    },
-    {
-      "keys": [],
-      "timepoint": 139.355607
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 139.632549
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 139.881058
-    },
-    {
-      "keys": [],
-      "timepoint": 140.084031
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 140.378319
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 140.658322
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 140.911476
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 141.218137
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 141.719889
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 141.803656
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 141.888449
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 141.97091
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 142.05535
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 142.138389
-    },
-    {
-      "keys": [
-        "f"
-      ],
-      "timepoint": 142.221903
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 142.458442
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 143.021677
-    },
-    {
-      "keys": [
-        "q"
-      ],
-      "timepoint": 143.328106
-    },
-    {
-      "keys": [
-        "s"
-      ],
-      "timepoint": 143.632918
-    },
-    {
-      "keys": [
-        "d"
-      ],
-      "timepoint": 144.021162
+      "timepoint": 71.866072
     },
     {
       "keys": [
         "q",
-        "d"
+        "g"
       ],
-      "timepoint": 144.385161
-    },
-    {
-      "keys": [],
-      "timepoint": 144.782069
+      "timepoint": 72.090311
     },
     {
       "keys": [
-        "d"
+        "q",
+        "g"
       ],
-      "timepoint": 145.271918
+      "timepoint": 72.328863
     },
     {
       "keys": [
         "s"
       ],
-      "timepoint": 145.738592
+      "timepoint": 72.724331
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 73.000591
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 73.259172
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 73.488889
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 73.637256
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 74.024722
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 74.291935
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 74.540138
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 74.696151
+    },
+    {
+      "keys": [
+        "q",
+        "f"
+      ],
+      "timepoint": 74.990794
+    },
+    {
+      "keys": [],
+      "timepoint": 75.270648
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 75.544161
+    },
+    {
+      "keys": [],
+      "timepoint": 75.802569
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 75.985004
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 76.253909
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 76.484551
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 76.696
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 76.844277
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.081097
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.583998
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.662096
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.749214
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.8364
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 77.915579
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 78.002365
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 78.293091
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 78.707292
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 78.928871
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 79.239777
+    },
+    {
+      "keys": [],
+      "timepoint": 79.849008
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.080733
+      "timepoint": 80.255584
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 80.647113
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 81.164679
+    },
+    {
+      "keys": [],
+      "timepoint": 81.46959
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 81.80955
+    },
+    {
+      "keys": [],
+      "timepoint": 82.313143
+    },
+    {
+      "keys": [],
+      "timepoint": 86.460079
+    },
+    {
+      "keys": [],
+      "timepoint": 86.922422
+    },
+    {
+      "keys": [
+        "q",
+        "f"
+      ],
+      "timepoint": 87.2221
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 87.699989
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 87.956904
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 88.203869
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 88.383939
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.581688
+      "timepoint": 88.557026
+    },
+    {
+      "keys": [],
+      "timepoint": 88.797873
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 89.064596
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 89.307522
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 89.571538
+    },
+    {
+      "keys": [],
+      "timepoint": 89.849172
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 90.080676
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 90.325693
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 90.527005
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.664892
+      "timepoint": 90.741607
+    },
+    {
+      "keys": [],
+      "timepoint": 90.998176
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 91.287626
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 91.55069
+    },
+    {
+      "keys": [],
+      "timepoint": 91.834569
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 92.329481
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 92.615874
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 92.83098
+    },
+    {
+      "keys": [],
+      "timepoint": 93.087297
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.748034
+      "timepoint": 93.380258
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 93.63983
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 93.875509
+    },
+    {
+      "keys": [],
+      "timepoint": 94.179639
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 94.540453
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 94.931917
+    },
+    {
+      "keys": [],
+      "timepoint": 95.172572
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.831951
+      "timepoint": 95.487338
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.913967
+      "timepoint": 95.808006
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 99.902978
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 100.116328
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 100.438712
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 100.726586
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 101.000771
+    },
+    {
+      "keys": [],
+      "timepoint": 101.402039
+    },
+    {
+      "keys": [
+        "s",
+        "d"
+      ],
+      "timepoint": 101.761277
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 101.983266
+    },
+    {
+      "keys": [],
+      "timepoint": 102.171175
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 102.471577
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 146.997764
+      "timepoint": 102.725727
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 103.009108
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.08073
+      "timepoint": 104.947603
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 105.226067
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 105.524021
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 105.928175
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 106.184606
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.164822
+      "timepoint": 106.38128
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 106.607044
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 106.777939
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 106.997253
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 107.290366
+    },
+    {
+      "keys": [],
+      "timepoint": 111.125399
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 111.358132
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.247695
+      "timepoint": 111.603797
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 111.85919
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 112.146934
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.330675
+      "timepoint": 112.438606
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 112.907096
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 113.223745
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 113.511193
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.41498
+      "timepoint": 113.823902
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 114.128255
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 114.408401
+    },
+    {
+      "keys": [],
+      "timepoint": 114.726624
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 115.055675
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 115.300633
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 115.581011
+    },
+    {
+      "keys": [],
+      "timepoint": 115.903193
+    },
+    {
+      "keys": [],
+      "timepoint": 116.148395
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.497342
+      "timepoint": 116.562175
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 117.088734
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 117.552689
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 118.941792
+    },
+    {
+      "keys": [],
+      "timepoint": 119.36235
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 119.763727
+    },
+    {
+      "keys": [],
+      "timepoint": 121.153658
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 121.579604
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 122.011573
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 122.49122
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 122.663182
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 122.92205
+    },
+    {
+      "keys": [],
+      "timepoint": 123.311269
+    },
+    {
+      "keys": [],
+      "timepoint": 123.827515
+    },
+    {
+      "keys": [],
+      "timepoint": 124.236958
+    },
+    {
+      "keys": [],
+      "timepoint": 124.896685
+    },
+    {
+      "keys": [],
+      "timepoint": 125.127586
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 125.403274
+    },
+    {
+      "keys": [],
+      "timepoint": 125.977916
+    },
+    {
+      "keys": [],
+      "timepoint": 126.207914
+    },
+    {
+      "keys": [],
+      "timepoint": 126.40749
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 126.743857
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 127.013918
+    },
+    {
+      "keys": [],
+      "timepoint": 127.27011
+    },
+    {
+      "keys": [],
+      "timepoint": 127.655507
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 127.936733
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 128.236396
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 128.456504
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 128.63992
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 128.912576
+    },
+    {
+      "keys": [],
+      "timepoint": 129.129852
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 129.392786
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 129.664987
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.581454
+      "timepoint": 130.015739
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.664091
+      "timepoint": 130.294045
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.74782
+      "timepoint": 130.568628
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 130.854705
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 131.051793
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 131.316389
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 131.517329
+    },
+    {
+      "keys": [],
+      "timepoint": 131.720222
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 131.894643
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.140197
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.644068
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.730354
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.808159
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.895824
+    },
+    {
+      "keys": [
+        "s",
+        "f"
+      ],
+      "timepoint": 132.982574
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 133.060401
+    },
+    {
+      "keys": [],
+      "timepoint": 133.290757
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 133.709617
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 134.029714
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 134.247984
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 134.421399
+    },
+    {
+      "keys": [],
+      "timepoint": 135.171942
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 135.623028
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 135.936171
     },
     {
       "keys": [
         "q"
       ],
-      "timepoint": 147.831235
+      "timepoint": 136.133167
     },
     {
       "keys": [
-        "q"
+        "q",
+        "g"
       ],
-      "timepoint": 147.91457
+      "timepoint": 136.380489
     },
     {
       "keys": [
-        "q"
+        "g"
       ],
-      "timepoint": 147.998475
+      "timepoint": 136.588275
     },
     {
       "keys": [
-        "q"
+        "g"
       ],
-      "timepoint": 148.081461
+      "timepoint": 137.260152
+    },
+    {
+      "keys": [],
+      "timepoint": 137.484905
     },
     {
       "keys": [
-        "q"
+        "g"
       ],
-      "timepoint": 148.164563
+      "timepoint": 137.675846
+    },
+    {
+      "keys": [],
+      "timepoint": 137.854174
     },
     {
       "keys": [
-        "q"
+        "d"
       ],
-      "timepoint": 148.247619
+      "timepoint": 138.601963
     },
     {
       "keys": [
-        "q"
+        "s"
       ],
-      "timepoint": 148.330507
+      "timepoint": 138.837694
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 139.156421
+    },
+    {
+      "keys": [],
+      "timepoint": 139.439501
+    },
+    {
+      "keys": [],
+      "timepoint": 139.724417
+    },
+    {
+      "keys": [],
+      "timepoint": 139.948798
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 140.08842
+    },
+    {
+      "keys": [
+        "g"
+      ],
+      "timepoint": 140.404069
+    },
+    {
+      "keys": [],
+      "timepoint": 140.710497
+    },
+    {
+      "keys": [],
+      "timepoint": 140.859852
+    },
+    {
+      "keys": [],
+      "timepoint": 141.034003
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 141.258874
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 141.759349
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 141.838166
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 141.924855
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 142.003934
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 142.091024
+    },
+    {
+      "keys": [
+        "q",
+        "g"
+      ],
+      "timepoint": 142.177357
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 142.431632
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 142.84099
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 143.21277
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 143.50425
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 143.942279
+    },
+    {
+      "keys": [],
+      "timepoint": 144.363407
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 144.760307
+    },
+    {
+      "keys": [
+        "f"
+      ],
+      "timepoint": 145.289493
+    },
+    {
+      "keys": [
+        "d"
+      ],
+      "timepoint": 145.554811
+    },
+    {
+      "keys": [],
+      "timepoint": 145.795327
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.110236
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.612527
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.69139
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.780108
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.86742
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 146.944901
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.031303
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.109131
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.195277
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.283565
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.360389
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.445487
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.534419
+    },
+    {
+      "keys": [
+        "s"
+      ],
+      "timepoint": 147.610077
     }
   ],
   video

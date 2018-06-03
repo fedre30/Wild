@@ -10,6 +10,7 @@
           <Note class="note" v-for="note in notes" :key="note.id" :style="{'--y': `${note.y * 100}%`}" v-if="note.keys.includes(column.keyboard)"></Note>
           <play-zone class="playZone" :style="{'--playZoneY': `${playZoneY}%`, '--playZoneDelta': `${playZoneSpace}%`}"></play-zone>
         </Column>
+        <div v-on:click ="stopGame" class="stop">Stop</div>
       </div>
     </template>
   </div>
@@ -61,9 +62,6 @@ export default {
     else if (this.difficulty === 'hard') {
       this.visibleColumns = ['q', 's', 'd', 'f', 'g']
     }
-
-
-
     this.columns = this.visibleColumns.map((key) => ({
       keyboard: key,
       highlighted: false
@@ -159,6 +157,8 @@ export default {
           return
         }
 
+        // EDITOR TO CREATE SHEET MUSIC
+
         if (e.key === ' ') {
           this.editor.push({keys: this.columns.filter(c => c.highlighted).map(c => c.keyboard), timepoint: this.currentSongTime()})
         }
@@ -222,6 +222,10 @@ export default {
       if (this.song.notes[lastNoteIndex].timepoint + endDelay < this.currentSongTime()) {
         this.$router.replace({name: 'endGame', params: {score: this.score, rate: Math.floor(this.score / this.song.notes.length)}})
       }
+    },
+
+    stopGame () {
+      this.$router.replace({name: 'endGame', params: {score: this.score, rate: Math.floor(this.score / this.song.notes.length)}})
     }
   },
 
@@ -253,6 +257,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
+
+.game
+  background-color: black
+  height: 100vh
 video
   width: 100%
   height: 100vh
@@ -280,6 +288,22 @@ video
   z-index: 30000
 
 .stop
-  color: white
+  color: darkred
+  width: 150px
+  height: 50px
+  background-color: white
+  border-radius: 1rem
+  cursor: pointer
+  font-size: 2rem
+  font-weight: 700
+  transition: color .1s ease
+  line-height: 50px
+
+  &:hover
+    background-color: darkred
+    color: white
+
+
+
 
 </style>
