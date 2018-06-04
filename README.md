@@ -65,8 +65,8 @@ updateGame () {
     }
   ```
   
-  After all notes are generated, hhe second basic feature which is the fundamental of gameplay is the function that verifies whether the user has pressed the right key at the right moment or not.
-  N.B. As many keys can be played simultaneously, the concept of "chord" has been introduced in the function.
+  After all notes are generated, the second basic feature which is the fundamental of gameplay is the function that verifies whether the user has pressed the right key at the right moment or not.
+  N.B. As many keys can be played simultaneously, the concept of "chord" has been introduced into the function.
 
 ```
  verifyNotes () {
