@@ -225,7 +225,7 @@ export default {
     },
 
     stopGame () {
-      this.$router.replace({name: 'endGame', params: {score: this.score, rate: Math.floor(this.score / this.song.notes.length)}})
+      this.$router.replace({name: 'endGame', params: {score: this.score, rate: Math.floor(this.song.notes.length / this.score)}})
     }
   },
 
